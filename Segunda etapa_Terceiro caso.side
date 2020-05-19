@@ -1,0 +1,113 @@
+{
+  "id": "a263da42-af9c-4210-acaf-5150ace54313",
+  "version": "2.0",
+  "name": "Segunda etapa_Terceiro caso",
+  "url": "",
+  "tests": [{
+    "id": "53a35718-f18c-464c-b2d1-fb299b154f45",
+    "name": "Untitled",
+    "commands": [{
+      "id": "f032c1b0-f0f5-4e91-92f1-9446448e99bb",
+      "comment": "",
+      "command": "open",
+      "target": "http://fundacaocaed.org.br/#!/pagina-inicial",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9794a906-4b72-4322-be00-388a5a8265b4",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.nav-item:nth-child(4) > .nav-link",
+      "targets": [
+        ["css=.nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'processos seletivos')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#!/processoseletivos')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "2fa83f1f-61e7-4164-9d9d-014b47607581",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-item:nth-child(4) > .nav-link",
+      "targets": [
+        ["css=.nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'processos seletivos')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#!/processoseletivos')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "72fe3877-7cfb-4593-a92a-f9e6b3ee1f91",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "//button[@class='btn btn-confirm']",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "f5a88fe2-2101-4c54-8223-29f353335ad9",
+      "comment": "",
+      "command": "clickAt",
+      "target": "//button[@class='btn btn-confirm']",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='msg']/div/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Fechar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "61f2270c-e4c6-456b-a9cb-3e127f3a0f94",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "id=v-pills-messages-tab",
+      "targets": [
+        ["id=v-pills-messages-tab", "id"],
+        ["css=#v-pills-messages-tab", "css:finder"],
+        ["xpath=//button[@id='v-pills-messages-tab']", "xpath:attributes"],
+        ["xpath=//div[@id='v-pills-tab']/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'EDITAIS ENCERRADOS')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "e90e4066-5cf2-4703-99aa-b87a46aca3af",
+      "comment": "",
+      "command": "click",
+      "target": "id=v-pills-messages-tab",
+      "targets": [
+        ["id=v-pills-messages-tab", "id"],
+        ["css=#v-pills-messages-tab", "css:finder"],
+        ["xpath=//button[@id='v-pills-messages-tab']", "xpath:attributes"],
+        ["xpath=//div[@id='v-pills-tab']/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'EDITAIS ENCERRADOS')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf3bb78d-b93b-4ddb-bc0c-dca499a4c95e",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.panel:nth-child(12) > #headingTwo .collapsed",
+      "targets": [
+        ["css=.panel:nth-child(12) > #headingTwo .collapsed", "css:finder"],
+        ["xpath=(//div[@id='headingTwo']/div/button)[12]", "xpath:idRelative"],
+        ["xpath=//div[12]/div/div/button", "xpath:position"]
+      ],
+      "value": "30000"
+    }]
+  }],
+  "suites": [{
+    "id": "14987ef4-8f34-41c7-8e26-8149d41e6d02",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["53a35718-f18c-464c-b2d1-fb299b154f45"]
+  }],
+  "urls": [],
+  "plugins": []
+}

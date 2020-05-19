@@ -1,0 +1,141 @@
+{
+  "id": "0e3f9b44-cdcf-4d20-a889-7e88db76be82",
+  "version": "2.0",
+  "name": "Segunda etapa_Quarto caso",
+  "url": "",
+  "tests": [{
+    "id": "667865f2-af90-480e-9075-e586b8c3413d",
+    "name": "Untitled",
+    "commands": [{
+      "id": "2758641a-cfa9-4e3a-b38e-a273b059b688",
+      "comment": "",
+      "command": "open",
+      "target": "http://fundacaocaed.org.br/#!/fundacao",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1a217e71-30f6-4283-894d-baf6b50df636",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.nav-item:nth-child(4) > .nav-link",
+      "targets": [
+        ["css=.nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'processos seletivos')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#!/processoseletivos')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "c3064116-ac13-4f9a-b6b3-deff399e703e",
+      "comment": "Processo seletivo",
+      "command": "click",
+      "target": "css=.nav-item:nth-child(4) > .nav-link",
+      "targets": [
+        ["css=.nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'processos seletivos')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#!/processoseletivos')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8b74d47-d569-4ff5-a02a-2c80b0d20a8e",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "//button[@class='btn btn-confirm']",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "45dab122-71ac-43cd-a28f-239f76d33b7b",
+      "comment": "Caixa dialogo",
+      "command": "clickAt",
+      "target": "//button[@class='btn btn-confirm']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "047158da-1266-4898-8acb-dd29f3b73e42",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "id=v-pills-profile-tab",
+      "targets": [
+        ["id=v-pills-profile-tab", "id"],
+        ["css=#v-pills-profile-tab", "css:finder"],
+        ["xpath=//button[@id='v-pills-profile-tab']", "xpath:attributes"],
+        ["xpath=//div[@id='v-pills-tab']/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'RESULTADOS PUBLICADOS')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "a3425e0f-5b24-4809-8d7c-2dadb2f9ebe4",
+      "comment": "Resultados publicados ",
+      "command": "click",
+      "target": "id=v-pills-profile-tab",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a35e2f04-39e9-46fb-9b83-6a7214648e80",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.panel:nth-child(12) > #headingTwo .collapsed",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "10289e86-88ee-4f29-a267-c4cafba29eea",
+      "comment": "Painel",
+      "command": "click",
+      "target": "css=.panel:nth-child(12) > #headingTwo button",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "67dc4757-2372-47d0-b3ad-13967339c1c4",
+      "comment": "",
+      "command": "open",
+      "target": "https://forms.gle/EXLo6WubFhACspcA9",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "699c90ef-499e-40e0-927f-89d88a935e1d",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "name=entry.1418286286",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "0f6b633a-cb2d-4555-a029-585939e4a5f3",
+      "comment": "",
+      "command": "type",
+      "target": "name=entry.1418286286",
+      "targets": [
+        ["name=entry.1418286286", "name"],
+        ["css=.quantumWizTextinputPaperinputInput", "css:finder"],
+        ["xpath=//input[@name='entry.1418286286']", "xpath:attributes"],
+        ["xpath=//form[@id='mG61Hd']/div/div/div[2]/div/div/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Des. Tecnologia - Teste"
+    }, {
+      "id": "1dcb3637-12b8-4998-8a07-968328e339f8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.appsMaterialWizButtonPaperbuttonLabel",
+      "targets": [
+        ["css=.appsMaterialWizButtonPaperbuttonLabel", "css:finder"],
+        ["xpath=//form[@id='mG61Hd']/div/div/div[3]/div/div/div/span/span", "xpath:idRelative"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "2c11880f-78e5-43a1-81ea-96001001ad58",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["667865f2-af90-480e-9075-e586b8c3413d"]
+  }],
+  "urls": [],
+  "plugins": []
+}

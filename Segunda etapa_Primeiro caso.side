@@ -1,0 +1,109 @@
+{
+  "id": "2b9c4253-05a7-4442-aafa-bf0afaab3c50",
+  "version": "2.0",
+  "name": "Segunda etapa_Primeiro caso",
+  "url": "",
+  "tests": [{
+    "id": "011180bd-a2c4-499d-b65b-672028730dcf",
+    "name": "Untitled",
+    "commands": [{
+      "id": "fd7a7fc7-dcd8-4910-8729-3d56e190d73b",
+      "comment": "",
+      "command": "open",
+      "target": "http://fundacaocaed.org.br/#!/fundacao",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "89e35f21-348b-4930-959f-66978299c8fd",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.nav-item:nth-child(4) > .nav-link",
+      "targets": [
+        ["css=.nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'processos seletivos')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#!/processoseletivos')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "f6698d5e-d79d-4511-85c7-51fa429325c6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-item:nth-child(4) > .nav-link",
+      "targets": [
+        ["css=.nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'processos seletivos')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#!/processoseletivos')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e6ef101-c4c3-4a33-86a1-88bc8a9c03e2",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "//button[@class='btn btn-confirm']",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='msg']/div/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Fechar')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "2cbc4454-8647-4eb9-825c-eb13bced5737",
+      "comment": "",
+      "command": "clickAt",
+      "target": "//button[@class='btn btn-confirm']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b481c05b-c9ab-46fc-9cb4-f79186b66294",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "id=edital-aberto-tab",
+      "targets": [
+        ["id=edital-aberto-tab", "id"],
+        ["css=#edital-aberto-tab", "css:finder"],
+        ["xpath=//button[@id='edital-aberto-tab']", "xpath:attributes"],
+        ["xpath=//div[@id='v-pills-tab']/button", "xpath:idRelative"],
+        ["xpath=//section/div/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'EDITAIS ABERTOS')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "1b2a9107-aceb-4e8a-8e28-b62f9c6a9c44",
+      "comment": "",
+      "command": "click",
+      "target": "id=edital-aberto-tab",
+      "targets": [
+        ["id=edital-aberto-tab", "id"],
+        ["css=#edital-aberto-tab", "css:finder"],
+        ["xpath=//button[@id='edital-aberto-tab']", "xpath:attributes"],
+        ["xpath=//div[@id='v-pills-tab']/button", "xpath:idRelative"],
+        ["xpath=//section/div/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'EDITAIS ABERTOS')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f500e780-8e16-4102-a846-0dc053ae98fa",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.panel:nth-child(12) > #headingTwo .collapsed",
+      "targets": [],
+      "value": "30000"
+    }]
+  }],
+  "suites": [{
+    "id": "3664c979-c967-4bd9-b1e0-23e866454da5",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["011180bd-a2c4-499d-b65b-672028730dcf"]
+  }],
+  "urls": [],
+  "plugins": []
+}

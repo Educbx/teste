@@ -1,0 +1,101 @@
+{
+  "id": "fcdf9e2e-c24e-4c8b-ae74-0d49819bdd08",
+  "version": "2.0",
+  "name": "segunda etapa_segundo caso",
+  "url": "",
+  "tests": [{
+    "id": "4951fa83-84ac-43d5-bc25-7ca9cea995c4",
+    "name": "Untitled",
+    "commands": [{
+      "id": "5b911505-0889-49d3-ba44-18f557182aef",
+      "comment": "",
+      "command": "open",
+      "target": "http://fundacaocaed.org.br/#!/pagina-inicial",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eed8e8d9-14a8-45b0-b6ef-cf909a67eac1",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.nav-item:nth-child(4) > .nav-link",
+      "targets": [
+        ["css=.nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'processos seletivos')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#!/processoseletivos')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "5bbf25dc-514d-49ff-85a5-32cde824b4f0",
+      "comment": "Processos seletivos",
+      "command": "click",
+      "target": "css=.nav-item:nth-child(4) > .nav-link",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c1d49e3c-0f03-4022-9307-6816e4e74fe5",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "//button[@class='btn btn-confirm']",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "6f1d7d13-57a8-451c-a23e-d1648011c2d9",
+      "comment": "Fecha dialogo",
+      "command": "clickAt",
+      "target": "//button[@class='btn btn-confirm']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "99b3d14e-09c8-467d-b199-73f8e33e58a7",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "id=v-pills-profile-tab",
+      "targets": [
+        ["id=v-pills-profile-tab", "id"],
+        ["css=#v-pills-profile-tab", "css:finder"],
+        ["xpath=//button[@id='v-pills-profile-tab']", "xpath:attributes"],
+        ["xpath=//div[@id='v-pills-tab']/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'RESULTADOS PUBLICADOS')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "0429cc8f-a22a-4ad4-835e-7faad16f8597",
+      "comment": "Resultados publicados ",
+      "command": "click",
+      "target": "id=v-pills-profile-tab",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a4157597-6ffb-4c27-a067-6b07bc39b1a8",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.panel:nth-child(12) > #headingTwo .collapsed",
+      "targets": [
+        ["css=.panel:nth-child(12) > #headingTwo .collapsed", "css:finder"],
+        ["xpath=(//div[@id='headingTwo']/div/button)[12]", "xpath:idRelative"],
+        ["xpath=//div[12]/div/div/button", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "2503ecc9-29cc-4ef4-8e93-273fde40b8ab",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.panel:nth-child(12) > #headingTwo .collapsed",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "3684332e-5751-4d90-a88b-639571e68a41",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["4951fa83-84ac-43d5-bc25-7ca9cea995c4"]
+  }],
+  "urls": [],
+  "plugins": []
+}
